@@ -1,6 +1,7 @@
 package main
 
 import (
+	"os"
 	"rahul-yr/learn-go-simple-todo-crud/todo"
 
 	"github.com/gin-contrib/cors"
@@ -23,5 +24,7 @@ func main() {
 	// start the web server
 	// listen and serve on
 	// address:port
-	r.Run() // listen and serve on 0.0.0.0:8080
+	port := os.Getenv("PORT")
+
+	r.Run(":" + port)
 }

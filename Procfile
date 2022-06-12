@@ -1,1 +1,1 @@
-web : learn-go-simple-todo-crud
+web: learn-go-simple-todo-crud
